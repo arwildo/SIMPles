@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Logo = () => (
   <img src="/SIMPles-logo.svg" alt="Logo" className="h-10" />
@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto flex items-center px-4 py-3">
         <Logo />
         {/* menu desktop */}
-        <ul className="hidden md:flex ml-15 gap-10">
+        <ul className="hidden sm:flex ml-15 gap-10">
           {menu.map((item) => (
             <li key={item.label}>
               <a
@@ -34,7 +34,7 @@ export default function Navbar() {
         </ul>
         {/* hamburger*/}
         <button
-          className="ml-auto md:hidden flex flex-col justify-center items-center h-10 w-10"
+          className="ml-auto sm:hidden flex flex-col justify-center items-center h-10 w-10"
           onClick={() => setOpen((v) => !v)}
           aria-label="Menu"
         >
@@ -44,7 +44,7 @@ export default function Navbar() {
       </div>
       {/* menu mobile */}
       {open && (
-        <ul className="md:hidden bg-black/90 px-6 py-4 flex flex-col gap-4 items-center">
+        <ul className="sm:hidden bg-black/90 px-6 py-4 flex flex-col gap-4 items-center">
           {menu.map((item) => (
             <li key={item.label}>
               <a
