@@ -1,6 +1,6 @@
-## SIMPles
+## <img src="https://simples.id/favicon.ico" width="16"> SIMPles
 <p align=center> 
-  <a href="https://simples.id"><img src="https://simples.id/favicon.ico" width="16"></img> SIMPles.id</a><br><br>
+  <a href="https://simples.id"><img src="https://simples.id/SIMPles-logo.svg"></img></a><br>
   SIMRS Simpel yang mudah digunakan.
  </p>
 
