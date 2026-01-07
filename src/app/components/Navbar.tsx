@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-5xl mx-auto flex items-center px-4 py-3">
         <Logo />
         {/* menu desktop */}
-        <ul className="hidden md:flex ml-6 gap-6">
+        <ul className="hidden md:flex ml-15 gap-10">
           {menu.map((item) => (
             <li key={item.label}>
               <a
@@ -44,7 +44,7 @@ export default function Navbar() {
       </div>
       {/* menu mobile */}
       {open && (
-        <ul className="md:hidden bg-black/90 px-6 py-4 flex flex-col gap-4">
+        <ul className="md:hidden bg-black/90 px-6 py-4 flex flex-col gap-4 items-center">
           {menu.map((item) => (
             <li key={item.label}>
               <a
