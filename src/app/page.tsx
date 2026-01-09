@@ -1,4 +1,6 @@
 import { EB_Garamond } from 'next/font/google';
+import Seperation from './components/Seperation';
+
 
 const ebGaramond = EB_Garamond({ subsets: ['latin'] });
 
@@ -12,6 +14,7 @@ export default function Home() {
               SIMRS Simpel yang mudah digunakan
             </span>
           </h1>
+          <Seperation />
           <p className="max-w-md text-lg leading-8 text-white">
             Electronic Medical Record yang cepat, ringan, dan mudah terintegrasi satu sama lain.
           </p>
