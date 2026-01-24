@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const Logo = () => (
-  <img src="/SIMPles-logo.svg" alt="Logo" className="h-10" />
+  <Image src="/SIMPles-logo.svg" alt="Logo" height={120} width={120} />
 );
 
 const menu = [
@@ -44,12 +45,12 @@ export default function Navbar() {
       </div>
       {/* menu mobile */}
       {open && (
-        <ul className="sm:hidden bg-black/90 px-6 py-4 flex flex-col gap-4 items-center">
+        <ul className="sm:hidden bg-black/20 backdrop-blur-md px-6 py-4 flex flex-col gap-4 items-center">
           {menu.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
-                className="text-white font-medium block"
+                className="text-white font-medium block hover:font-bold"
                 onClick={() => setOpen(false)}
               >
                 {item.label}
