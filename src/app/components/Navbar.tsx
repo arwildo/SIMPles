@@ -35,12 +35,12 @@ export default function Navbar() {
         </ul>
         {/* hamburger*/}
         <button
-          className="ml-auto sm:hidden flex flex-col justify-center items-center h-10 w-10"
+          className={`ml-auto sm:hidden flex flex-col justify-center items-center h-10 w-10 group relative`}
           onClick={() => setOpen((v) => !v)}
           aria-label="Menu"
         >
-          <span className="block w-7 h-0.5 bg-white mb-1.5 rounded transition-all" />
-          <span className="block w-7 h-0.5 bg-white rounded transition-all" />
+          <span className={`block w-7 h-0.5 bg-white rounded transition-all duration-300 ${open ? 'rotate-45 absolute' : 'mb-1.5 group-hover:rotate-45 group-hover:absolute group-hover:mb-0'}`} />
+          <span className={`block w-7 h-0.5 bg-white rounded transition-all duration-300 ${open ? '-rotate-45 absolute' : 'group-hover:-rotate-45 group-hover:absolute'}`} />
         </button>
       </div>
       {/* menu mobile */}
